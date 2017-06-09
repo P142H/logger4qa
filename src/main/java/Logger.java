@@ -5,7 +5,7 @@ class Logger {
     private LoggerSaver saver;
     private LoggerFormatter formatter;
 
-    // DI - dependency injection (реализация ложится на выхывающую сторону)
+    // DI - dependency injection (реализация ложится на вызывающую сторону, в данном случае на тест LoggerTest)
     Logger(LoggerFilter filter, LoggerSaver saver, LoggerFormatter formatter) {
         this.filter = filter;
         this.saver = saver;
